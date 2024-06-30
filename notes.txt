@@ -328,3 +328,7 @@ npm i express-yup-middleware
 npm i yup - used for validations
 
 npm i helmet - security OUR API
+
+ npm i express-rate-limit
+
+ npm i compression
