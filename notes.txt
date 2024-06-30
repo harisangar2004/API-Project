@@ -332,3 +332,5 @@ npm i helmet - security OUR API
  npm i express-rate-limit
 
  npm i compression
+
+ npm i pino - logging 
