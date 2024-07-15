@@ -8,7 +8,7 @@ import rateLimit from 'express-rate-limit';
 import compression from 'compression';
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
 const limiter = rateLimit({
     windowMs: 60*100, //1 min
@@ -20,6 +20,7 @@ app.use(limiter);
 app.use(express.json())
 app.use(helmet())
 app.use(cors())
+
 app.use('/v1', mainRoutes);
 app.use('/v1/user', userRoutes);
 

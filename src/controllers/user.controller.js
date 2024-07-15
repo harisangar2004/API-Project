@@ -4,8 +4,8 @@ import pino from 'pino'
 
 const logger = pino()
 const STATUS = {
-    success: 'OK',
-    failure: 'NO'
+    success: true,
+    failure: false
 };
 /**
  * 
@@ -13,7 +13,7 @@ const STATUS = {
  * @param {*} res 
  * @returns 
  */
-const getAllUsers= (req, res) => {
+const getAllUsers = (req, res) => {
     const users = userService.getAllUser();
     if (users.length) {
         logger.info(`Retrieving all users`)
@@ -36,13 +36,8 @@ const getUser = (req, res) => {
     const id = parseInt(req.params.id, 10);
     const user = userService.getUser(id);
     if (user) {
-        logger.info(`getting  ${id} user`)
-        return res.status(StatusCodes.OK).send(
-            {
-                status: STATUS.success,
-                user,
-            }
-        );
+        logger.info(`getting User ID ${id} `)
+        return res.status(StatusCodes.OK).send(user);
     }
     return res.status(StatusCodes.NOT_FOUND).send(
         {
@@ -81,12 +76,12 @@ const updateUser = (req, res) => {
     const updatedUser = userService.updateUser(id, user);
 
     if (updatedUser) {
-        logger.info(`updating ${id} user`)
+        logger.info(`updating User ID ${id} `)
         return res.status(StatusCodes.OK).send({
             status: STATUS.success,
             user: updatedUser,
         });
-        
+
     } else {
         return res.status(StatusCodes.NOT_FOUND).send({
             status: STATUS.failure,
@@ -100,13 +95,13 @@ const updateUser = (req, res) => {
  * @param {*} res 
  * @returns 
  */
-const removeUser =(req, res) => {
+const removeUser = (req, res) => {
     const { params } = req;
     const id = parseInt(params.id);
     const user = userService.getUser(id);
     if (user) {
         userService.removeUser(id);
-        logger.info(`deleting a ${id} user`)
+        logger.info(`deleting a User ID ${id} `)
         return res.status(StatusCodes.OK).send({
             status: STATUS.success,
             message: `User ${id} has been deleted. `,

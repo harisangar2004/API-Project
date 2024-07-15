@@ -1,159 +1,20 @@
+npm start
+
 IN TERMINAL
 git init
 
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE>
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> node -v   
+$ node -v   
 v21.4.0
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm -v    
+$ npm -v    
 10.2.4
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm in
-npm ERR! code ENOENT
-npm ERR! syscall open
-npm ERR! path D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE/package.json
-npm ERR! errno -4058
-npm ERR! enoent ENOENT: no such file or directory, open 'D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE\package.json'
-npm ERR! enoent This is related to npm not being able to find a file.
-npm ERR! enoent
 
-npm ERR! A complete log of this run can be found in: C:\Users\aphar\AppData\Local\npm-cache\_logs\2024-04-11T13_00_24_240Z-debug-0.log
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> git
-usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]       
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
-           <command> [<args>]
-
-These are common Git commands used in various situations:
-
-start a working area (see also: git help tutorial)
-   clone     Clone a repository into a new directory
-   init      Create an empty Git repository or reinitialize an existing one
-
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
-
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
-
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
-
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch      
-   push      Update remote refs along with associated objects
-
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
-
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> git -v
+$ git -v
 git version 2.39.0.windows.2
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> git --version
-git version 2.39.0.windows.2
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> git init
+
+ git init
 Initialized empty Git repository in D:/coding/Web Development/#Bulid_Backend_REST_API_WITH_NODE/API_SIMPLE/.git/
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> git branch
 
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> git main
-git: 'main' is not a git command. See 'git --help'.
-
-The most similar command is
-        mailinfo
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> git mai
-git: 'mai' is not a git command. See 'git --help'.
-
-The most similar command is
-        am
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> git branch
-
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> git status
-
-On branch master
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        .gitignore
-        notes.txt
-        package-lock.json
-
-nothing added to commit but untracked files present (use "git add" to track)
-onfig
-cd : Cannot find path '~/.gitconfig' because it does not exist.
-At line:1 char:1
-+ cd ~/.gitconfig
-+ ~~~~~~~~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (~/.gitconfig:String) [Set-Location],
-    ItemNotFoundException
-    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocatio
-   nCommand
-
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm install
-npm ERR! code ENOENT
-npm ERR! syscall open
-npm ERR! path D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE/package.json
-npm ERR! errno -4058
-npm ERR! enoent ENOENT: no such file or directory, open 'D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE\package.json'
-npm ERR! enoent This is related to npm not being able to find a file.
-npm ERR! enoent
-
-npm ERR! A complete log of this run can be found in: C:\Users\aphar\AppData\Local\npm-cache\_logs\2024-04-11T13_20_39_411Z-debug-0.log
-
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm
-npm <command>
-
-Usage:
-
-npm install        install all the dependencies in your project
-npm install <foo>  add the <foo> dependency to your project
-npm test           run this project's tests
-npm run <foo>      run the script named <foo>
-npm <command> -h   quick help on <command>
-npm -l             display usage info for all commands
-npm help <term>    search for help on <term> (in a browser)
-npm help npm       more involved overview (in a browser)
-
-All commands:
-
-    access, adduser, audit, bugs, cache, ci, completion,
-    config, dedupe, deprecate, diff, dist-tag, docs, doctor,
-    edit, exec, explain, explore, find-dupes, fund, get, help,
-    help-search, hook, init, install, install-ci-test,
-    install-test, link, ll, login, logout, ls, org, outdated,
-    owner, pack, ping, pkg, prefix, profile, prune, publish,
-    query, rebuild, repo, restart, root, run-script, sbom,
-    search, set, shrinkwrap, star, stars, start, stop, team,
-    test, token, uninstall, unpublish, unstar, update, version,
-    view, whoami
-
-Specify configs in the ini-formatted file:
-    C:\Users\aphar\.npmrc
-or on the command line via: npm <command> --key=value
-
-More configuration info: npm help config
-Configuration fields: npm help 7 config
-
-npm@10.2.4 D:\Programs\node_modules\npm
-
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm init
+$ npm init
 This utility will walk you through creating a package.json file.
 It only covers the most common items, and tries to guess sensible defaults.
 
@@ -193,7 +54,7 @@ About to write to D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\AP
 
 
 Is this OK? (yes) yes
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm init -y
+$ npm init -y
 Wrote to D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE\package.json:
 
 {
@@ -229,7 +90,7 @@ found 0 vulnerabilities
 PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> 
 
  npm install --save-dev @babel/core
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE>
+
 PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm i body-parser
 
 removed 1 package, and audited 120 packages in 2s
@@ -238,7 +99,7 @@ removed 1 package, and audited 120 packages in 2s
   run `npm fund` for details
 
 found 0 vulnerabilities
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm i ava 
+$ npm i ava 
 
 added 202 packages, removed 1 package, and audited 322 packages in 17s
 
@@ -248,7 +109,7 @@ added 202 packages, removed 1 package, and audited 322 packages in 17s
 found 0 vulnerabilities
 
 
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm install  -g nodemon
+$ npm install  -g nodemon
 
 added 33 packages in 5s
 
@@ -256,7 +117,7 @@ added 33 packages in 5s
   run `npm fund` for details
 
 
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm install --save-dev nodemon
+$ npm install --save-dev nodemon
 
 added 23 packages, and audited 345 packages in 2s
 
@@ -264,8 +125,8 @@ added 23 packages, and audited 345 packages in 2s
   run `npm fund` for details
 
 found 0 vulnerabilities
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> 
 
+-------------- ------------ -------------
 
 created file - server.js in parent folder src folder
 
@@ -277,7 +138,8 @@ added 87 packages, and audited 432 packages in 17s
   run `npm fund` for details
 
 found 0 vulnerabilities
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm install ava --save-dev
+
+$ npm install ava --save-dev
 npm WARN idealTree Removing dependencies.ava in favor of devDependencies.ava
 
 up to date, audited 432 packages in 5s
@@ -286,14 +148,14 @@ up to date, audited 432 packages in 5s
   run `npm fund` for details
 
 found 0 vulnerabilities
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm install --save-dev @babel/preset-env
+$ npm install --save-dev @babel/preset-env
 
 nodemon server.js
 
 write code in server.js
 
 
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> npm i http-status-codes
+$ npm i http-status-codes
 
 added 1 package, and audited 541 packages in 2s
 
@@ -301,7 +163,7 @@ added 1 package, and audited 541 packages in 2s
   run `npm fund` for details
 
 found 0 vulnerabilities
-PS D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\API_SIMPLE> 
+
 
 
 src
@@ -329,8 +191,10 @@ npm i yup - used for validations
 
 npm i helmet - security OUR API
 
- npm i express-rate-limit
+ npm i express-rate-limit - controlls a requests per time
 
  npm i compression
 
  npm i pino - logging 
+
+npm i cors - requesting api
