@@ -1,0 +1,29 @@
+npm create vite@latest
+Need to install the following packages:
+create-vite@5.3.0
+Ok to proceed? (y) y
+√ Project name: ... client-project
+√ Select a framework: » React
+√ Select a variant: » JavaScript + SWC
+
+Scaffolding project in D:\coding\Web Development\#Bulid_Backend_REST_API_WITH_NODE\Frontend\client-project...
+
+Done. Now run:
+
+  cd client-project
+  npm install
+  npm run dev
+
+
+npm i cors
+npm i styled-components
+
+npm install -D tailwindcss
+npx tailwindcss init
+
+npm i react-router-dom
+
+npm i react-toastify  -> notification packages
+npm uninstall tailwindcss
+
+
