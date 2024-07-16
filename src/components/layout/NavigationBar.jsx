@@ -7,7 +7,7 @@ const NavigationBar = () => {
                 <Container>
                     <Navbar.Brand as={NavLink} to="/">Simple Client</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link as={NavLink} to="/create" >Create User</Nav.Link>
+                        <Nav.Link as={NavLink} to="/create" className="badge text-white bg-primary text-wrap" >Create User</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>  

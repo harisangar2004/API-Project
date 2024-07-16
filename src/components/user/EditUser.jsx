@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import * as userService from "../../services/user.service.js";
-import { Button, Col, Form, Row } from "react-bootstrap";
+import { Button, Col, Form,  Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import Layout from "../layout/Layout.jsx";
 import { toast } from "react-toastify";
 import { firstUpperCase } from "../helpers/string.helper.js";
-
+import { NavLink } from "react-router-dom";
 const EditUser = () => {
     const { userId } = useParams();
 
@@ -106,8 +106,12 @@ const EditUser = () => {
                             />
                         </Form.Group>
 
-                        <Button variant="primary" type="submit" onClick={submitForm}>
+                        <Button variant="primary" onClick={submitForm} className="m-1">
                             Update
+                        </Button>
+
+                        <Button variant='danger' as={NavLink} to={`/remove/${userId}`} className="m-1" >
+                            Remove
                         </Button>
                     </Form>
                 </Col>
