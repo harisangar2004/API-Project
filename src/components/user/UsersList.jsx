@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { Button, Card, Col, Row } from 'react-bootstrap';
+import { Button, Card, Col, Row, Spinner } from 'react-bootstrap';
 import Layout from "../layout/Layout";
 import * as userService from "../../services/user.service.js";
 import { NavLink } from "react-router-dom";
-import { toast } from "react-toastify";
+import { Code } from "react-content-loader";
 
 const UsersList = () => {
     const [users, setUsers] = useState({});
     const [errorMessage, setErrorMessage] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
     const fetchUsers = async () => {
         try {
+            setIsLoading(true);
             const response = await userService.retrieveAllUser();
             setUsers(response);
+            setIsLoading(false);
         } catch (error) {
             const retrieveErrorMessage = () => {
                 const apiErrorMessage = error?.response?.data?.message;
@@ -28,8 +31,12 @@ const UsersList = () => {
 
     return (
         <Layout >
-            {errorMessage ? (
-                <h4 className="text-center text-danger fw-bold">{errorMessage}</h4>
+            {isLoading ? (
+                <div className="text-center ">
+                    <Code />
+                </div>
+            ) : errorMessage ? (
+                <h4 className="text-center text-danger fw-bold" > {errorMessage}</h4>
             ) : (
                 <>
                     <h3 className="text-center mb-2 ">Users</h3>
@@ -56,8 +63,9 @@ const UsersList = () => {
                         ))
                     }
                 </>
-            )}
-        </Layout>
+            )
+            }
+        </Layout >
     )
 }
 

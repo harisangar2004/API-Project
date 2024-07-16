@@ -26,4 +26,9 @@ npm i react-router-dom
 npm i react-toastify  -> notification packages
 npm uninstall tailwindcss
 
+npm i @chakra-ui/react -> spinning loading
+npm i react-content-loader
+
+npm remove @chakra-ui/react
+
 

@@ -26,6 +26,8 @@ const retrieveUser = async (userId) => {
 const retrieveAllUser = async () => {
     const getAllUsersUrl = `${baseApiUrl}/user/all`;
     const {data: apiResponse} = await axios.get(getAllUsersUrl);
+    //put sleep for 4 secs
+    //await new Promise(r => setTimeout(r, 4000));
     return apiResponse;
 }
 
