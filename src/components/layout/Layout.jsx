@@ -2,6 +2,7 @@ import NavigationBar from "./NavigationBar";
 import { Container } from "react-bootstrap";
 import { ToastContainer } from "react-toastify";
 import styled, { createGlobalStyle } from 'styled-components'
+import Footer from "./Footer";
 
 
 const BackgroundColor = createGlobalStyle`
@@ -13,14 +14,15 @@ const BackgroundColor = createGlobalStyle`
 const Layout = ({ children }) => {
     return (
         <>
-            <BackgroundColor light />
             <Container fluid >
+                <BackgroundColor light />
                 <ToastContainer />
                 <NavigationBar />
                 <Container className="mt-5 mb-5">
                     {children}
                 </Container>
             </Container>
+            <Footer />
         </>
     );
 };

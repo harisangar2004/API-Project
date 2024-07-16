@@ -27,7 +27,7 @@ const CreateUser = () => {
             const response = await userService.createUser(payload);
             if (response?.status) {
 
-                const getUserID= response?.user?.id;
+                const getUserID= response?.user?.name;
                 toast.success(`User ${getUserID} successfully Created. `)
                 // OK, give a success message
                 setName('');
